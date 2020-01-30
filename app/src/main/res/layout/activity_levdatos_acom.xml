@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.catastral.levantamiento.LevdatosAcomActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/Crdv_LevDatAcomDat"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    app:cardCornerRadius="@dimen/margen_5"
+                    app:cardElevation="@dimen/margen_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/Txv_LevDatAcomRuta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:background="@color/colorAccent"
+                            android:gravity="center"
+                            android:padding="@dimen/margen_extra_corto"
+                            android:text="(80) LA BOLOGNIA(COCA COLA)"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/colorBlanco"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"></TextView>
+
+                        <TextView
+                            android:id="@+id/Txv_LevDatAcomcuenta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="@dimen/margen_extra_corto"
+                            android:text="99-9999"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Txv_LevDatAcomRuta"></TextView>
+
+                        <TextView
+                            android:id="@+id/Txv_LevDatAcomMed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center"
+                            android:padding="@dimen/margen_extra_corto"
+                            android:text="J15NK714123 L"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/white"
+
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Txv_LevDatAcomcuenta" />
+
+                        <TextView
+                            android:id="@+id/Txv_LevDatAcomCatastral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="@dimen/margen_extra_corto"
+                            android:text="0501020105019016001000000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/Txv_LevDatAcomMed" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/Crdv_LevDatAcom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margen_extra_corto"
+                    app:cardCornerRadius="@dimen/margen_5"
+                    app:cardElevation="@dimen/margen_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Crdv_LevDatAcomDat"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margen_extra_corto">
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedDiamAcom"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="4dp"
+                            android:entries="@array/diametro_acometida"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedMatAcom"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:entries="@array/material_acometida"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedMatCaj"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/material_caja"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatMedDiamAcom"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedEstCaj"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:entries="@array/estado_caja"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatMedMatAcom"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedInsCaj"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/modoinstalacion_caja"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatMedEstCaj"></Spinner>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/Gl_DatosAcometida"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/Crdv_LevDatBasPred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margen_extra_corto"
+                    app:cardCornerRadius="@dimen/margen_5"
+                    app:cardElevation="@dimen/margen_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Crdv_LevDatAcom"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margen_extra_corto">
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatMedSi"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_medidor"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatTipUsoAgua"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/predio_tipousoagua"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatTipUsoPred"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/predio_tipouso"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatMedSi"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatTipUnidPred"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/predio_unidaddomiciliaria"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatTipUsoAgua"></Spinner>
+                        <com.androidbuts.multispinnerfilter.MultiSpinner
+                            android:id="@+id/Spnr_LevDatServBasPred"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/predio_serviciosbasicos"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatTipUsoPred"
+                            app:hintText="Multi Selection" />
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatEstPred"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/predio_estado"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatTipUnidPred"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredAcesParq"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_parque"
+                            app:layout_constraintEnd_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatServBasPred"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredAcesSalud"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_salud"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/Gl_DatosAcometida1"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatEstPred"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredAcesPolic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_presenciapolicia"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredAcesSalud"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredAcesTrans"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_transporte"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredAcesPolic"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredTipVia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_tipovia"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredAcesTrans"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredTipAcer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/accesos_tipoacera"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredTipVia"></Spinner>
+
+                        <Spinner
+                            android:id="@+id/Spnr_LevDatPredFocContam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+                            android:entries="@array/existe_fococontaminacion"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredTipAcer"></Spinner>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/textInputLayout3"
+                            style="@style/Widget.Shrine.TextInputLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="8dp"
+
+                            android:hint="Observacion Foco Contaminacion"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Spnr_LevDatPredFocContam">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Edtxt_LevDatMedObsManFoco"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:text="EXISTE UN BOTADERO DE BASURA CERCA"
+                                android:textAllCaps="true" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/Gl_DatosAcometida1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margen_extra_corto"
+                    app:cardCornerRadius="@dimen/margen_5"
+                    app:cardElevation="@dimen/margen_5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Crdv_LevDatBasPred"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/MBtn_AcomSiguiente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/white"
+                            android:text="SIGUIENTE"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/MBtn_AcomAtras"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ATRAS"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            tools:layout_editor_absoluteX="41dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

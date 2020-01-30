@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">Catastral</string>
+
+    <!-- formulario fragment login  -->
+    <string name="txthintsingupemail">Cedula</string>
+    <string name="txthintsingupcontras">Contraseña</string>
+    <string name="txthintsingupolvidocontras">Olvido su Contraseña?</string>
+    <string name="btnsingupinicioses">Iniciar sesión</string>
+    <!-- formulario fragment registro  -->
+    <string name="txthintregistrousername">Nombres</string>
+    <string name="txthintregistrouserlastname">Apellidos</string>
+    <string name="txthintregistrocedula">Cédula</string>
+    <string name="txthintregistroemail">Email</string>
+    <string name="txthintregistrocontras">Contraseña</string>
+    <string name="btnregistroregistrar">Registrar</string>
+
+    <!--LISTAS DATOS DE MEDIDOR -->
+    <string-array name="marcas_medidor_acometida">
+        <item>MARCA</item>
+        <item>MARCA1</item>
+        <item>MARCA2</item>
+        <item>MARCA3</item>
+    </string-array>
+    <string-array name="diametro_medidor">
+        <item>DIAMETRO</item>
+        <item>1/2</item>
+        <item>3/4</item>
+        <item>1"</item>
+    </string-array>
+    <string-array name="diametro_acometida">
+        <item>DIAM.ACOMET</item>
+        <item>1/2</item>
+        <item>3/4</item>
+        <item>1"</item>
+    </string-array>
+    <string-array name="material_medidor">
+        <item>MAT.MEDIDOR</item>
+        <item>METALICO</item>
+        <item>PLASTICO</item>
+    </string-array>
+    <string-array name="estado_cupula_medidor">
+        <item>EST.CUPULA</item>
+        <item>OPTIMO</item>
+        <item>DESGASTE</item>
+        <item>SIN CUPULA</item>
+    </string-array>
+    <string-array name="observacion_medidor">
+        <item>OBS.MEDIDOR</item>
+        <item>BUEN ESTADO</item>
+        <item>FRENADO</item>
+        <item>ILEGIBLE</item>
+        <item>DESTRUIDO</item>
+        <item>EMPAÑADO</item>
+        <item>INVERTIDO</item>
+    </string-array>
+    <!--LISTAS DATOS DE ACOMETIDA -->
+    <string-array name="material_acometida">
+        <item>MAT.ACOMET</item>
+        <item>GALVANIZADA</item>
+        <item>COBRE</item>
+        <item>PLASTICA</item>
+        <item>PVC</item>
+    </string-array>
+    <string-array name="material_caja">
+        <item>MAT.CAJA</item>
+        <item>METALICO</item>
+        <item>PLASTICO</item>
+        <item>CONCRETO</item>
+        <item>SIN CAJA</item>
+    </string-array>
+    <string-array name="estado_caja">
+        <item>ESTADO.CAJA</item>
+        <item>BUEN ESTADO</item>
+        <item>MAL ESTADO</item>
+    </string-array>
+    <string-array name="modoinstalacion_caja">
+        <item>INST.CAJA</item>
+        <item>HORIZONTAL</item>
+        <item>VERTICAL</item>
+    </string-array>
+    <!--LISTAS DATOS DEL PREDIO -->
+    <string-array name="predio_tipousoagua">
+        <item>TIPO.USO.AGUA</item>
+        <item>RESIDENCIAL</item>
+        <item>COMERCIAL</item>
+        <item>INDUSTRIAL</item>
+        <item>COMUNAL</item>
+        <item>PUBLICO</item>
+        <item>MIXTO</item>
+    </string-array>
+    <string-array name="predio_tipouso">
+        <item>TIPO.USO.PRED</item>
+        <item>PROPIO</item>
+        <item>ARRENDAMIENTO</item>
+    </string-array>
+    <string-array name="predio_unidaddomiciliaria">
+        <item>UNID.DE.USO.PREDIO</item>
+        <item>UNIFAMILIAR</item>
+        <item>MULTIFAMILIAR</item>
+        <item>EDIF.APARTAMENTOS</item>
+        <item>HABITACIONAL</item>
+    </string-array>
+
+    <string-array name="predio_serviciosbasicos">
+        <item>SERV.BASICOS</item>
+        <item>AGUA</item>
+        <item>ALCANTARILLADO</item>
+        <item>ENERGIA</item>
+        <item>LINEA TELEFONICA</item>
+        <item>INTERNET</item>
+    </string-array>
+    <string-array name="predio_estado">
+        <item>ESTADO.PRED</item>
+        <item>CONSTRUCCION</item>
+        <item>EN CONSTRUCCION</item>
+        <item>CONSTRUCCION SUSPENDIDA</item>
+        <item>DEMOLIDO</item>
+        <item>ABANDONADO</item>
+        <item>LOTE</item>
+    </string-array>
+    <!--LISTAS DATOS DEL PREDIO INFORMACION URBANISTICA ACCESOS -->
+
+    <string-array name="accesos_medidor">
+        <item>TIENE.MEDIDOR</item>
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="accesos_parque">
+        <item>PARQ.ZONAS.VERDES</item>
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="accesos_salud">
+        <item>ACC.CENT.SALUD</item>
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="accesos_transporte">
+        <item>ACC.TRANSPORTE.PUBLICO </item>
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="existe_fococontaminacion">
+        <item>EXISTE.FOCO.CONTAMINACION </item>
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+
+    <string-array name="accesos_presenciapolicia">
+        <item>PRES.POLICIAL</item>
+        <item>PERMANENTE</item>
+        <item>OCACIONAL</item>
+        <item>NUNCA</item>
+    </string-array>
+    <string-array name="accesos_tipovia">
+        <item>TIPO.VIA</item>
+        <item>ASFALTO</item>
+        <item>ADOQUIN</item>
+        <item>HORMIGON</item>
+        <item>TIERRA</item>
+    </string-array>
+    <string-array name="accesos_tipoacera">
+        <item>TIPO.ACERA</item>
+        <item>ASFALTO</item>
+        <item>ADOQUIN</item>
+        <item>HORMIGON</item>
+        <item>TIERRA</item>
+    </string-array>
+    <!--LISTAS OBSERVACIONES BASICAS -->
+    <string-array name="observ_frec_agua">
+        <item>FREC.AGUA</item>
+        <item>DIARIA</item>
+        <item>SEMANAL</item>
+    </string-array>
+    <string-array name="observ_calidad_agua">
+        <item>CAL.AGUA</item>
+        <item>BUENA</item>
+        <item>REGULAR</item>
+    </string-array>
+    <string-array name="observ_levobsgensusuarios">
+        <item>OBS. GENERALES</item>
+        <item>OK</item>
+        <item>VERIF COORDENADAS</item>
+        <item>NOVEDAD 1 VERIF</item>
+        <item>NOVEDAD 2 VERIF</item>
+    </string-array>
+    <string-array name="observ_levdatosusuarios">
+        <item>OBS.DATOS.USUARIOS</item>
+        <item>OK</item>
+        <item>USUARIO FALLECIDO</item>
+        <item>USUARIO NO COLABORA</item>
+        <item>CASA CERRADA</item>
+    </string-array>
+    <string-array name="provincias_array">
+        <item>Escoje una Provincia</item>
+        <item>Azuay</item>
+        <item>Bolívar</item>
+        <item>Cañar</item>
+        <item>Carchi</item>
+        <item>Chimborazo</item>
+        <item>Cotopaxi</item>
+        <item>El Oro</item>
+        <item>Esmeraldas</item>
+        <item>Galápagos</item>
+        <item>Guayas</item>
+        <item>Imbabura</item>
+        <item>Loja</item>
+        <item>Los Ríos</item>
+        <item>Manabí</item>
+        <item>Morona Santiago</item>
+        <item>Napo</item>
+        <item>Orellana</item>
+        <item>Pastaza</item>
+        <item>Pichincha</item>
+        <item>Santa Elena</item>
+        <item>Santo Domingo de los Tsáchilas</item>
+        <item>Sucumbíos</item>
+        <item>Tungurahua</item>
+        <item>Zamora Chinchipe</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

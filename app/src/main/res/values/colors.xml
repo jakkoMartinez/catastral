@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlanco">#ffff</color>
+    <color name="colorRojo">#F44336</color>
+    <color name="colorTransparente">#00FFFFFF</color>
+    <color name="colorRutas">#FFCC00</color>
+    <color name="colorAjustes">#26CA69</color>
+    <color name="colorAzul">#03A9F5</color>
+    <color name="colorInstrucciones">#FF9700</color>
+    <color name="colorNikName">#CC33CC</color>
+    <color name="colorInformacion">#F44236</color>
+    <item name="naranja" type="color">#ff5722</item>
+    <item name="negro" type="color">#000000</item>
+    <item name="transparente" type="color">#07ffffff</item>
+    <color name="textInputOutlineColor">#ACCCFB</color>
+
+</resources>
